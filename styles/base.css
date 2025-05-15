@@ -1,15 +1,25 @@
+/* Google Fonts */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdf6f0; /* soft cream */
+  color: #3e2723; /* deep brown */
+  line-height: 1.6;
+}
+
+h1, h2, h3, blockquote {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf6f0; /* soft cream */
-  color: #3e2723; /* deep brown */
-  line-height: 1.6;
 }
 
 /* Header */
@@ -44,7 +54,7 @@ nav a:hover {
   color: #c69aa3; /* dusty rose accent */
 }
 
-/* Main Sections */
+/* Main Content */
 main {
   padding: 2rem;
   max-width: 1000px;
@@ -66,17 +76,58 @@ p {
   font-size: 1.1rem;
 }
 
+ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+blockquote.quote {
+  font-style: italic;
+  color: #5d4037;
+  border-left: 4px solid #c69aa3;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+}
+
+/* Did You Know Box */
+.fact-box {
+  background-color: #f9ece8;
+  border-left: 5px solid #c69aa3;
+  padding: 1rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  font-size: 1.05rem;
+}
+
+/* Section Divider */
+hr {
+  border: none;
+  border-top: 2px solid #c69aa3;
+  width: 50%;
+  margin: 3rem auto;
+}
+
 /* Images */
-.main-photo,
-.flag-photo,
-.family-photo,
-.beach-photo {
+img {
   display: block;
   width: 100%;
-  max-width: 600px;
+  height: auto;
   margin: 1rem auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-photo {
+  max-width: 400px;
+}
+
+.flag-photo {
+  max-width: 100px;
+}
+
+.family-photo,
+.beach-photo {
+  max-width: 600px;
 }
 
 /* Footer */
