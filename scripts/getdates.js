@@ -1,5 +1,8 @@
-// Sets current year
+/* global document */
+/* eslint-env browser */
+
+// Set the current year in the footer
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Sets last modified date
+// Set the last modified date
 document.getElementById("lastModified").textContent = document.lastModified;
