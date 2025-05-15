@@ -1,7 +1,7 @@
 /* Google Fonts */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #fdf6f0; /* soft cream */
+  background-color: #fceee3; /* soft peach (NOT white) */
   color: #3e2723; /* deep brown */
   line-height: 1.6;
 }
@@ -47,11 +47,12 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #c69aa3; /* dusty rose accent */
+  color: #a34a57; /* accessible darker rose */
+  text-decoration: underline;
 }
 
 /* Main Content */
@@ -84,7 +85,7 @@ ul {
 blockquote.quote {
   font-style: italic;
   color: #5d4037;
-  border-left: 4px solid #c69aa3;
+  border-left: 4px solid #a34a57; /* improved contrast */
   padding-left: 1rem;
   margin: 1.5rem 0;
 }
@@ -92,7 +93,7 @@ blockquote.quote {
 /* Did You Know Box */
 .fact-box {
   background-color: #f9ece8;
-  border-left: 5px solid #c69aa3;
+  border-left: 5px solid #a34a57;
   padding: 1rem;
   margin: 2rem 0;
   border-radius: 10px;
@@ -102,7 +103,7 @@ blockquote.quote {
 /* Section Divider */
 hr {
   border: none;
-  border-top: 2px solid #c69aa3;
+  border-top: 2px solid #a34a57;
   width: 50%;
   margin: 3rem auto;
 }
@@ -115,6 +116,10 @@ img {
   margin: 1rem auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo-block {
+  margin-bottom: 2.5rem; /* extra spacing between image blocks */
 }
 
 .main-photo {
