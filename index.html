@@ -4,17 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Personal website of Bruna Stockett" />
-  <title>Bruna Stockett | WDD 131</title>
+  <title>Bruna Stockett | WDD 131 Project</title>
   <link rel="stylesheet" href="styles/base.css" />
 </head>
 <body>
+
   <header>
     <h1>Bruna Stockett</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Photos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/gal/5.22-23?lang=eng" target="_blank">Scripture</a></li>
+        <li><a href="https://www.linkedin.com/in/Bruna-Stockett" target="_blank">LinkedIn</a></li>
       </ul>
     </nav>
   </header>
@@ -22,26 +24,46 @@
   <main>
     <section class="intro">
       <h2>Welcome to My World</h2>
-      <p>Hi! I'm Bruna—originally from Brazil, now living in North Dakota with my beautiful family. I believe in hard work, self-growth, and living life with passion and purpose.</p>
-      <img src="images/Bruna.jpeg" alt="Bruna Stockett smiling" class="main-photo">
+      <p>I’m originally from Brazil and now living in North Dakota with my family. I believe in hard work, self-growth, and living life with passion and purpose.</p>
     </section>
 
-    <section class="about">
-      <h2>My Roots 🇧🇷</h2>
-      <p>I was born and raised in Brazil and carry my culture with pride. From food to music to the language I love—it all shapes who I am today.</p>
-      <img src="images/brazil-flag.jpg" alt="Brazilian Flag" class="flag-photo">
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I was born and raised in Brazil and carry my culture with pride. From food to music to the language I love—it all shapes who I am today.
+        I enjoy early morning workouts, quiet moments, and cooking delicious Brazilian meals. I believe in consistency, kindness, and staying grounded in faith.
+      </p>
+
+      <ul>
+        <li>💪 Weightlifting and staying healthy</li>
+        <li>🎵 Music playlists and relaxing walks</li>
+        <li>🍞 Pão de queijo and homemade meals</li>
+        <li>💖 Faith, family, and intentional living</li>
+      </ul>
+
+      <blockquote class="quote">“Rooted in faith. Growing with purpose.”</blockquote>
     </section>
 
-    <section class="family">
-      <h2>Family is Everything</h2>
-      <p>This is my biggest joy—my husband, our two amazing kids, and our sweet Golden Retriever. We do life together, through thick and thin.</p>
-      <img src="images/family.jpg" alt="Bruna's family sitting on front steps" class="family-photo">
-    </section>
+    <section class="photos">
+      <h2>My Life in Pictures</h2>
 
-    <section class="brazil">
-      <h2>A Piece of Home</h2>
-      <p>This is Salvador, Bahia—a place that holds my heart. The colors, the ocean, the warmth of the people… it’s forever part of me.</p>
-      <img src="images/salvador.jpg" alt="Salvador Bahia coastline and lighthouse" class="beach-photo">
+      <div class="photo-block">
+        <h3>My Roots 🇧🇷</h3>
+        <p>I’m proud of where I come from. Brazil shaped who I am.</p>
+        <img src="images/brazil-flag.jpg" alt="Brazilian Flag" class="flag-photo" />
+      </div>
+
+      <div class="photo-block">
+        <h3>Family is Everything</h3>
+        <p>This is my biggest joy—my husband, our two amazing kids, and our sweet Golden Retriever.</p>
+        <img src="images/family.jpg" alt="Bruna's family sitting on front steps" class="family-photo" />
+      </div>
+
+      <div class="photo-block">
+        <h3>A Piece of Home</h3>
+        <p>This is Salvador, Bahia—a place that holds my heart.</p>
+        <img src="images/salvador.jpg" alt="Salvador Bahia coastline and lighthouse" class="beach-photo" />
+      </div>
     </section>
   </main>
 
