@@ -2,43 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Bruna Rodrigues Stockett. Home page with dynamic content." />
-  <meta name="author" content="Bruna Rodrigues Stockett" />
-  <title>WDD 131 – Dynamic Web Fundamentals - Bruna Rodrigues Stockett</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Personal website of Bruna Stockett" />
+  <title>Bruna Stockett | WDD 131</title>
   <link rel="stylesheet" href="styles/base.css" />
-  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Welcome to My WDD 131 Home Page</h1>
+    <h1>Bruna Stockett</h1>
     <nav>
-      <a href="https://www.linkedin.com/in/bruna-stockett-438903304">LinkedIn</a>
-      <a href="https://byupw.instructure.com/">Canvas</a>
-      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
-      <a href="#">Final Project</a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Photos</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section class="card">
-      <h2>About Me</h2>
-      <img src="images/aboutme.jpg" alt="Bruna and her dog Marshmallow" />
-      <p class="caption">Me and Marshmallow enjoying one of our daily walks in North Dakota!</p>
-      <p>Hello! My name is Bruna Stockett. I am originally from Brazil and now live in North Dakota with my family. In my free time, I love spending time outdoors, working out, and going on walks with my dog.</p>
+    <section class="intro">
+      <h2>Welcome to My World</h2>
+      <p>Hi! I'm Bruna—originally from Brazil, now living in North Dakota with my beautiful family. I believe in hard work, self-growth, and living life with passion and purpose.</p>
+      <img src="images/Bruna.jpeg" alt="Bruna Stockett smiling" class="main-photo">
     </section>
 
-    <section class="card">
-      <h2>My Goals</h2>
-      <img src="images/study-space.jpg" alt="My study space for learning" />
-      <p class="caption">My cozy study corner — where I build new skills every day.</p>
-      <p>One of my goals this semester is to create great websites and understand how JavaScript adds interactivity to a page.</p>
+    <section class="about">
+      <h2>My Roots 🇧🇷</h2>
+      <p>I was born and raised in Brazil and carry my culture with pride. From food to music to the language I love—it all shapes who I am today.</p>
+      <img src="images/brazil-flag.jpg" alt="Brazilian Flag" class="flag-photo">
+    </section>
+
+    <section class="family">
+      <h2>Family is Everything</h2>
+      <p>This is my biggest joy—my husband, our two amazing kids, and our sweet Golden Retriever. We do life together, through thick and thin.</p>
+      <img src="images/family.jpg" alt="Bruna's family sitting on front steps" class="family-photo">
+    </section>
+
+    <section class="brazil">
+      <h2>A Piece of Home</h2>
+      <p>This is Salvador, Bahia—a place that holds my heart. The colors, the ocean, the warmth of the people… it’s forever part of me.</p>
+      <img src="images/salvador.jpg" alt="Salvador Bahia coastline and lighthouse" class="beach-photo">
     </section>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Bruna Rodrigues Stockett, North Dakota</p>
-    <p id="lastModified"></p>
+    <p>&copy; <span id="year"></span> Bruna Stockett</p>
+    <p>Last modified: <span id="lastModified"></span></p>
   </footer>
+
+  <script src="scripts/main.js"></script>
 </body>
 </html>
