@@ -1,0 +1,30 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fdf6f0;
+  color: #3e2723;
+}
+
+header {
+  background: #dba39a; /* dusty rose */
+  color: white;
+}
+
+nav {
+  background: #fef3c7; /* pale yellow */
+}
+
+nav a:hover {
+  background: #fcd34d; /* muted yellow */
+  color: #3e2723;
+}
+
+figure {
+  background: white;
+  border: 2px solid #f8d4d0; /* blush rose */
+}
+
+footer {
+  background: #e8e3da; /* light taupe */
+  color: #3e2723;
+}
