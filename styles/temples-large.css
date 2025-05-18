@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 768px) {
+  /* Desktop Navigation */
+  nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 0 1rem;
+  }
+
+  /* Intro Section on Large Screens */
+  .intro-section {
+    font-size: 1.15rem;
+    padding: 3rem;
+    line-height: 1.8;
+    max-width: 1000px;
+  }
+
+  /* Grid Layout for Temple Photos */
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  figure img {
+    max-width: 400px;
+  }
+
+  figcaption {
+    font-size: 1.05rem;
+    padding: 1rem;
+  }
+}
