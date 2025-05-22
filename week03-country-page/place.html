@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,11 +7,21 @@
   <title>Discover Japan</title>
   <link rel="stylesheet" href="styles/place.css" />
   <script src="scripts/place.js" defer></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>🇯🇵 Welcome to Japan</h1>
   </header>
+
+  <!-- Jump to Facts Button -->
+  <nav class="top-nav">
+    <a href="#facts" class="scroll-button">📚 Jump to Interesting Facts</a>
+  </nav>
 
   <main>
     <!-- Hero Section -->
@@ -52,6 +62,18 @@
         <img src="images/japan-mountfuji.webp" alt="Snow-capped Mount Fuji behind a traditional red pagoda and cherry blossoms">
         <img src="images/neighborhood.japan.jpg" alt="Quiet neighborhood alley with historic wooden homes and a blooming cherry tree">
       </div>
+    </section>
+
+    <!-- Interesting Facts Section -->
+    <section id="facts" class="interesting-facts">
+      <h2>🌟 Interesting Facts About Japan</h2>
+      <ul>
+        <li>There are more pets than children in Japan.</li>
+        <li>Japanese trains are the most punctual in the world — delays average under a minute!</li>
+        <li>Slurping noodles is considered polite and shows appreciation.</li>
+        <li>Japan has vending machines that sell everything from umbrellas to ramen.</li>
+        <li>There's a baby-crying sumo contest for good luck!</li>
+      </ul>
     </section>
   </main>
 
