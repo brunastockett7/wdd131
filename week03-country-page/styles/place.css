@@ -16,7 +16,7 @@
 
 body {
   font-family: var(--font-main);
-  background-color: var(--secondary-color); /* Mustard background */
+  background-color: var(--secondary-color);
   color: var(--accent-color);
   line-height: 1.6;
   padding: 1rem;
@@ -57,7 +57,6 @@ header {
   margin-bottom: 0.5rem;
 }
 
-/* Mobile view: show SVG icon */
 .weather-icon {
   width: 40px;
   height: auto;
@@ -65,7 +64,6 @@ header {
   margin-top: 1rem;
 }
 
-/* Hide emoji on mobile */
 .emoji::after {
   content: "";
 }
@@ -112,52 +110,7 @@ header {
   cursor: pointer;
 }
 
-/* ========== FOOTER ========== */
-footer {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* ========== MEDIA QUERIES ========== */
-@media (min-width: 768px) {
-  /* Two-column gallery layout */
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* Hide SVG icon on large view */
-  .weather-icon {
-    display: none;
-  }
-
-  /* Show emoji via pseudo-element */
-  .emoji::after {
-    content: "⛅";
-    font-size: 1.5rem;
-    margin-left: 0.5rem;
-  }
-}
-.top-nav {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.scroll-button {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.scroll-button:hover {
-  background-color: #a10024;
-}
-
+/* ========== INTERESTING FACTS SECTION ========== */
 .interesting-facts {
   background-color: var(--highlight-color);
   padding: 1.5rem;
@@ -177,4 +130,85 @@ footer {
   padding-left: 1.5rem;
   font-size: 1rem;
   line-height: 1.8;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ========== SCROLL BUTTON NAV ========== */
+.top-nav {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.scroll-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #a10024;
+}
+
+/* ========== HELPFUL LINKS SECTION ========== */
+.resources {
+  background-color: var(--highlight-color);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.resources h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.resources ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resources li {
+  margin-bottom: 0.75rem;
+}
+
+.resources a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.resources a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .weather-icon {
+    display: none;
+  }
+
+  .emoji::after {
+    content: "⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
 }

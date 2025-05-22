@@ -1,3 +1,6 @@
+// === JavaScript for Discover Japan site ===
+// Handles footer date and wind chill display
+
 // === Footer Content ===
 function updateFooter() {
   const yearSpan = document.querySelector("#year");
@@ -14,6 +17,7 @@ const temperature = 45; // °F
 const windSpeed = 5;    // mph
 
 function calculateWindChill(tempF, speedMph) {
+  // Wind chill formula using Fahrenheit
   return (
     35.74 +
     0.6215 * tempF -
@@ -35,6 +39,6 @@ function displayWindChill(temp, speed) {
   }
 }
 
-// === Run on Load ===
+// === Run on Page Load ===
 updateFooter();
 displayWindChill(temperature, windSpeed);
