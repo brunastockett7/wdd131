@@ -1,15 +1,15 @@
-
 // === Footer Content ===
-document.querySelector("#year").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+function updateFooter() {
+  document.querySelector("#year").textContent = new Date().getFullYear();
+  document.querySelector("#lastModified").textContent = document.lastModified;
+}
 
 // === Wind Chill Calculation ===
-// Static values to match what's shown in the HTML
 const temperature = 45; // °F
 const windSpeed = 5; // mph
 
 function calculateWindChill(tempF, speedMph) {
-  // Wind chill formula (only 1 line of logic)
+  // One-line formula as required
   return (
     35.74 +
     0.6215 * tempF -
@@ -18,11 +18,14 @@ function calculateWindChill(tempF, speedMph) {
   );
 }
 
-// Check if values meet the condition to calculate wind chill
-let windChillText = "N/A";
-if (temperature <= 50 && windSpeed > 3) {
-  windChillText = calculateWindChill(temperature, windSpeed).toFixed(1) + " °F";
+function displayWindChill(temp, speed) {
+  let windChillText = "N/A";
+  if (temp <= 50 && speed > 3) {
+    windChillText = calculateWindChill(temp, speed).toFixed(1) + " °F";
+  }
+  document.querySelector("#windchill").textContent = windChillText;
 }
 
-// Display wind chill on the page
-document.querySelector("#windchill").textContent = windChillText;
+// === Run Functions on Page Load ===
+updateFooter();
+displayWindChill(temperature, windSpeed);

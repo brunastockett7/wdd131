@@ -1,10 +1,9 @@
-
 /* ========== GLOBAL VARIABLES ========== */
 :root {
   --primary-color: #bc002d;      /* Japan Red (Sun) */
-  --secondary-color: #ffffff;    /* White (Flag background) */
+  --secondary-color: #f3cd6b;    /* Mustard background */
   --accent-color: #333333;       /* Dark Gray for text */
-  --highlight-color: #f2f2f2;    /* Soft Light Gray background */
+  --highlight-color: #fffdf1;    /* Soft light for sections */
   --font-main: 'Segoe UI', Tahoma, sans-serif;
 }
 
@@ -17,7 +16,7 @@
 
 body {
   font-family: var(--font-main);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color); /* Mustard background */
   color: var(--accent-color);
   line-height: 1.6;
   padding: 1rem;
@@ -38,6 +37,7 @@ header {
   border-radius: 10px;
   margin-bottom: 1.5rem;
   border: 3px solid var(--primary-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 /* ========== WEATHER SECTION ========== */
@@ -80,16 +80,53 @@ header {
   margin-bottom: 0.5rem;
 }
 
+/* ========== GALLERY SECTION ========== */
+.gallery {
+  padding: 2rem 0;
+  background-color: var(--highlight-color);
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.gallery h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
 /* ========== FOOTER ========== */
 footer {
   text-align: center;
   margin-top: 2rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #555;
 }
 
 /* ========== MEDIA QUERIES ========== */
 @media (min-width: 768px) {
+  /* Two-column gallery layout */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* Hide SVG icon on large view */
   .weather-icon {
     display: none;
