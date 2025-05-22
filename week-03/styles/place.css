@@ -1,0 +1,104 @@
+
+/* ========== GLOBAL VARIABLES ========== */
+:root {
+  --primary-color: #bc002d;      /* Japan Red (Sun) */
+  --secondary-color: #ffffff;    /* White (Flag background) */
+  --accent-color: #333333;       /* Dark Gray for text */
+  --highlight-color: #f2f2f2;    /* Soft Light Gray background */
+  --font-main: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* ========== RESET & BASE ========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ========== HEADER ========== */
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* ========== HERO SECTION ========== */
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 3px solid var(--primary-color);
+}
+
+/* ========== WEATHER SECTION ========== */
+.weather {
+  background-color: var(--highlight-color);
+  padding: 1rem;
+  border-radius: 10px;
+  border-left: 5px solid var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.weather h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Mobile view: show SVG icon */
+.weather-icon {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Hide emoji on mobile */
+.emoji::after {
+  content: "";
+}
+
+/* ========== INFO SECTION ========== */
+.info {
+  padding: 1rem 0;
+}
+
+.info h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (min-width: 768px) {
+  /* Hide SVG icon on large view */
+  .weather-icon {
+    display: none;
+  }
+
+  /* Show emoji via pseudo-element */
+  .emoji::after {
+    content: "⛅";
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
