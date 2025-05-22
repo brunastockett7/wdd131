@@ -1,15 +1,19 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Explore Japan - Culture, Weather, and Beauty" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Japan - Culture, Weather, and Beauty">
   <title>Discover Japan</title>
-  <link rel="stylesheet" href="styles/place.css" />
+  <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
   <style>
     html {
       scroll-behavior: smooth;
+    }
+    .visually-hidden {
+      position: absolute;
+      left: -9999px;
     }
   </style>
 </head>
@@ -26,6 +30,7 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
+      <h2 class="visually-hidden">Scenic View of Mount Fuji in Japan</h2>
       <picture>
         <source srcset="images/japan-hero.webp" media="(min-width: 768px)">
         <img src="images/japan-hero.webp" alt="Majestic Mount Fuji framed by cherry blossoms in Japan">
@@ -38,7 +43,7 @@
       <p>Temperature: <span id="temp">45°F</span></p>
       <p>Wind Speed: <span id="speed">5 mph</span></p>
       <p>Wind Chill: <span id="windchill">N/A</span></p>
-      <img class="weather-icon" src="images/weather.icon.svg" alt="Sunny weather icon" />
+      <img class="weather-icon" src="images/weather.icon.svg" alt="Sunny weather icon">
     </section>
 
     <!-- Info Section -->
@@ -80,31 +85,11 @@
     <section class="resources">
       <h2>🔗 Helpful Links</h2>
       <ul>
-        <li>
-          <a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=Japan" target="_blank">
-            💰 Cost of Living in Japan
-          </a>
-        </li>
-        <li>
-          <a href="https://www.timeout.com/japan/restaurants/best-restaurants-in-tokyo" target="_blank">
-            🍣 Top 10 Restaurants in Tokyo
-          </a>
-        </li>
-        <li>
-          <a href="https://www.last.fm/tag/japanese+pop/artists" target="_blank">
-            🎤 Discover Popular Japanese Singers
-          </a>
-        </li>
-        <li>
-          <a href="https://www.japan.travel/en/uk/plan/etiquette/" target="_blank">
-            🎎 Japanese Etiquette Tips for Travelers
-          </a>
-        </li>
-        <li>
-          <a href="https://www.nhk.or.jp/lesson/english/" target="_blank">
-            🧠 Learn Basic Japanese (NHK World)
-          </a>
-        </li>
+        <li><a href="https://www.numbeo.com/cost-of-living/country_result.jsp?country=Japan" target="_blank">💰 Cost of Living in Japan</a></li>
+        <li><a href="https://www.timeout.com/japan/restaurants/best-restaurants-in-tokyo" target="_blank">🍣 Top 10 Restaurants in Tokyo</a></li>
+        <li><a href="https://www.last.fm/tag/japanese+pop/artists" target="_blank">🎤 Discover Popular Japanese Singers</a></li>
+        <li><a href="https://www.japan.travel/en/uk/plan/etiquette/" target="_blank">🎎 Japanese Etiquette Tips for Travelers</a></li>
+        <li><a href="https://www.nhk.or.jp/lesson/english/" target="_blank">🧠 Learn Basic Japanese (NHK World)</a></li>
       </ul>
     </section>
   </main>
@@ -115,4 +100,3 @@
   </footer>
 </body>
 </html>
-

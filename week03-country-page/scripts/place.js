@@ -1,7 +1,20 @@
+/* eslint-env browser */
+
 // === JavaScript for Discover Japan site ===
 // Handles footer date and wind chill display
 
-// === Footer Content ===
+const temperature = 45; // °F
+const windSpeed = 5;    // mph
+
+function calculateWindChill(tempF, speedMph) {
+  return (
+    35.74 +
+    0.6215 * tempF -
+    35.75 * (speedMph ** 0.16) +
+    0.4275 * tempF * (speedMph ** 0.16)
+  );
+}
+
 function updateFooter() {
   const yearSpan = document.querySelector("#year");
   const lastModifiedSpan = document.querySelector("#lastModified");
@@ -10,20 +23,6 @@ function updateFooter() {
     yearSpan.textContent = new Date().getFullYear();
     lastModifiedSpan.textContent = document.lastModified;
   }
-}
-
-// === Wind Chill Calculation ===
-const temperature = 45; // °F
-const windSpeed = 5;    // mph
-
-function calculateWindChill(tempF, speedMph) {
-  // Wind chill formula using Fahrenheit
-  return (
-    35.74 +
-    0.6215 * tempF -
-    35.75 * Math.pow(speedMph, 0.16) +
-    0.4275 * tempF * Math.pow(speedMph, 0.16)
-  );
 }
 
 function displayWindChill(temp, speed) {
