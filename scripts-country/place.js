@@ -1,6 +1,5 @@
 /* eslint-env browser */
 /* global document */
-/* eslint-env browser */
 
 // === JavaScript for Discover Japan site ===
 // Handles footer date and wind chill display
