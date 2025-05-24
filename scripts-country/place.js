@@ -1,4 +1,6 @@
 /* eslint-env browser */
+/* global document */
+/* eslint-env browser */
 
 // === JavaScript for Discover Japan site ===
 // Handles footer date and wind chill display
@@ -10,27 +12,31 @@ function calculateWindChill(tempF, speedMph) {
   return (
     35.74 +
     0.6215 * tempF -
-    35.75 * (speedMph ** 0.16) +
-    0.4275 * tempF * (speedMph ** 0.16)
+    35.75 * Math.pow(speedMph, 0.16) +
+    0.4275 * tempF * Math.pow(speedMph, 0.16)
   );
 }
 
 function updateFooter() {
-  const yearSpan = document.querySelector("#year");
-  const lastModifiedSpan = document.querySelector("#lastModified");
+  const yearSpan = document.getElementById("year");
+  const lastModifiedSpan = document.getElementById("lastModified");
 
-  if (yearSpan && lastModifiedSpan) {
+  if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
+  }
+
+  if (lastModifiedSpan) {
     lastModifiedSpan.textContent = document.lastModified;
   }
 }
 
 function displayWindChill(temp, speed) {
-  const windChillElement = document.querySelector("#windchill");
+  const windChillElement = document.getElementById("windchill");
   let windChillText = "N/A";
 
   if (temp <= 50 && speed > 3) {
-    windChillText = calculateWindChill(temp, speed).toFixed(1) + " °F";
+    const chill = calculateWindChill(temp, speed);
+    windChillText = `${chill.toFixed(1)} °F`;
   }
 
   if (windChillElement) {
@@ -41,3 +47,4 @@ function displayWindChill(temp, speed) {
 // === Run on Page Load ===
 updateFooter();
 displayWindChill(temperature, windSpeed);
+

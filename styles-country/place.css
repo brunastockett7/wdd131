@@ -1,9 +1,9 @@
 /* ========== GLOBAL VARIABLES ========== */
 :root {
-  --primary-color: #bc002d;      /* Japan Red (Sun) */
-  --secondary-color: #f3cd6b;    /* Mustard background */
-  --accent-color: #333333;       /* Dark Gray for text */
-  --highlight-color: #fffdf1;    /* Soft light for sections */
+  --primary-color: #bc002d;
+  --secondary-color: #f3cd6b;
+  --accent-color: #333333;
+  --highlight-color: #fffdf1;
   --font-main: 'Segoe UI', Tahoma, sans-serif;
 }
 
@@ -196,7 +196,6 @@ footer {
   text-decoration: underline;
 }
 
-/* ========== MEDIA QUERIES ========== */
 @media (min-width: 768px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
