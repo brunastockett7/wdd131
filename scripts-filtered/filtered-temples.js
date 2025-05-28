@@ -1,4 +1,3 @@
-
 // ======= MENU TOGGLE =======
 const menuButton = document.getElementById('menu-button');
 const navMenu = document.getElementById('nav-menu');
@@ -22,85 +21,70 @@ const temples = [
     location: "Salt Lake City, Utah",
     dedicated: "1893-04-06",
     area: 253015,
-    imageUrl: "images/temple1.jpg"
-  },
-  {
-    templeName: "São Paulo Brazil Temple",
-    location: "São Paulo, Brazil",
-    dedicated: "1978-10-30",
-    area: 59889,
-    imageUrl: "images/temple2.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/a25cc35c43d64746a7b779dfed7e7c27cd2e2a89/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Rome Italy Temple",
     location: "Rome, Italy",
     dedicated: "2019-03-10",
     area: 40000,
-    imageUrl: "images/temple3.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/3fd2a8b95c4b11edb181eeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Laie Hawaii Temple",
     location: "Laie, Hawaii",
     dedicated: "1919-11-27",
     area: 42000,
-    imageUrl: "images/temple4.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/bc3ab84c36b411edbdfaec9c4022f4e3e3df0935/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Paris France Temple",
     location: "Paris, France",
     dedicated: "2017-05-21",
     area: 44000,
-    imageUrl: "images/temple5.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/12ea78a6ec0b11edb2eaeeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Provo City Center Temple",
     location: "Provo, Utah",
     dedicated: "2016-03-20",
     area: 85000,
-    imageUrl: "images/temple6.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/88f70d5d3c6011edb79feeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Tokyo Japan Temple",
     location: "Tokyo, Japan",
     dedicated: "1980-10-27",
     area: 52959,
-    imageUrl: "images/temple7.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/16923c17c4d011edb52ceeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Mexico City Temple",
     location: "Mexico City, Mexico",
     dedicated: "1983-12-02",
     area: 116642,
-    imageUrl: "images/temple8.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/d78b52d2c9d311edb520eeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Accra Ghana Temple",
     location: "Accra, Ghana",
     dedicated: "2004-01-11",
     area: 17000,
-    imageUrl: "images/temple9.jpg"
-  },
-  // === Additional 3 temples (you can add matching images) ===
-  {
-    templeName: "Winnipeg Manitoba Temple",
-    location: "Winnipeg, Canada",
-    dedicated: "2021-10-31",
-    area: 18000,
-    imageUrl: "images/temple10.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/1f928c8ee3d611edb941eeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   },
   {
     templeName: "Arequipa Peru Temple",
     location: "Arequipa, Peru",
     dedicated: "2019-12-15",
     area: 34800,
-    imageUrl: "images/temple11.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/4d96c4c9e3d511edb52ceeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   },
   {
     templeName: "St. George Utah Temple",
     location: "St. George, Utah",
     dedicated: "1877-04-06",
     area: 110000,
-    imageUrl: "images/temple12.jpg"
+    imageUrl: "https://www.churchofjesuschrist.org/imgs/f9e9cd06d2d511edb79feeeeac1fb1a20875c6c9/full/320%2C/0/default.jpg"
   }
 ];
 
