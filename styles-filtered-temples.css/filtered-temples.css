@@ -1,0 +1,82 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e3f2fd; /* light blue */
+  color: #0b3d91;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.filter-buttons button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background-color: #bbdefb;
+  color: #0b3d91;
+}
+
+.intro {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #0b3d91;
+  padding: 0 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.temple-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  text-align: center;
+}
+
+.temple-card img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

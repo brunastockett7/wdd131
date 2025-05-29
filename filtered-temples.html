@@ -4,11 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Filtered Temples</title>
-  <link rel="stylesheet" href="filtered-temples.css" />
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
 </head>
 <body>
   <header>
     <h1>Temple Gallery</h1>
+    <nav class="filter-buttons">
+      <button id="home">Home</button>
+      <button id="old">Old</button>
+      <button id="new">New</button>
+      <button id="large">Large</button>
+      <button id="small">Small</button>
+    </nav>
   </header>
 
   <main>
@@ -24,7 +31,7 @@
       </p>
     </section>
 
-    <div id="temple-cards"></div>
+    <div id="temple-cards" class="grid-container"></div>
   </main>
 
   <footer>
