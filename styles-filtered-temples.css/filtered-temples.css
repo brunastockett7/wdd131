@@ -1,19 +1,19 @@
+/* === GLOBAL STYLES === */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #e3f2fd;
+  background-color: #e3f2fd; /* light blue */
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #0b3d91;
+  background-color: #0b3d91; /* navy */
   color: white;
   padding: 1rem;
   text-align: center;
 }
 
 h1 {
-  text-align: center;
   margin: 0.5rem 0;
 }
 
@@ -25,6 +25,7 @@ h1 {
   color: #333;
 }
 
+/* === FILTER BUTTONS === */
 .filter-buttons {
   display: flex;
   justify-content: center;
@@ -47,17 +48,17 @@ h1 {
   background-color: #1565c0;
 }
 
-/* Grid layout for temples */
+/* === GRID CONTAINER === */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
-  padding: 1rem;
   max-width: 1200px;
-  margin: auto;
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
-/* Temple cards */
+/* === TEMPLE CARDS === */
 .temple-card {
   background-color: white;
   border-radius: 10px;
@@ -66,39 +67,22 @@ h1 {
   text-align: center;
 }
 
-/* Image sizing */
+/* === CONSISTENT IMAGE STYLING === */
 .temple-card img {
   width: 100%;
   max-width: 300px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+  margin: 1rem auto;
   display: block;
-  margin: 0 auto 1rem;
 }
 
+/* === FOOTER === */
 footer {
   background-color: #0b3d91;
   color: white;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-}
-/* === TEMPLE CARD IMAGE SIZING FIX === */
-.temple-card img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  margin: 1rem auto 0;
-  display: block;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
 }
