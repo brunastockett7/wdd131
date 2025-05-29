@@ -1,8 +1,8 @@
 /* === BASE STYLES === */
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #e3f2fd; /* light blue */
-  color: #0b3d91; /* navy */
+  background-color: #1976d2; /* medium blue */
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 .filter-buttons button:hover {
-  background-color: #1976d2;
+  background-color: #1565c0; /* slightly darker blue */
 }
 
 /* === TEMPLE GRID === */
@@ -83,43 +83,14 @@ nav a:hover {
   padding: 1rem;
 }
 
+/* === TEMPLE CARD === */
 .temple-card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   text-align: center;
-}
-
-.temple-card img {
-  width: 100%;
-  max-width: 350px;
-  border-radius: 8px;
-  margin-top: 1rem;
-}
-
-/* === FOOTER === */
-footer {
-  background-color: #1976d2;
-  color: white;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-}
-.visually-hidden {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.intro {
-  max-width: 800px;
-  margin: 1rem auto;
-  padding: 1rem;
-  text-align: center;
-  font-size: 1.1rem;
-  color: #333;
+  color: #0b3d91; /* keep text dark on white card */
 }
 
 .temple-card img {
@@ -131,3 +102,32 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* === INTRO SECTION === */
+.intro {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* === ACCESSIBILITY === */
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
