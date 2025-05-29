@@ -92,3 +92,16 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+.filter-buttons button {
+  background-color: #b3d9ff; /* light blue */
+  color: #0b3d91;            /* navy text */
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.filter-buttons button:hover {
+  background-color: #0b3d91;
+  color: white;
+}
