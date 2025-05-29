@@ -243,3 +243,39 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+/* === CENTERED HEADER AND DESCRIPTION === */
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === MAKE TEMPLE CARDS DISPLAY SIDE BY SIDE === */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === TEMPLE IMAGE STYLING === */
+.temple-card img {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem;
+}
