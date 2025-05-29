@@ -3,44 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Temple Photo Album by Bruna Stockett" />
-  <meta name="author" content="Bruna Stockett" />
   <title>Temple Photo Album</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/temples.css" />
-  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)" />
-  <script src="scripts/filtered-temples.js" defer></script>
+  <link rel="stylesheet" href="styles-filtered-temples/filtered-temples.css" />
+  <script src="scripts-filtered/filtered-temples.js" defer></script>
 </head>
 <body>
   <header>
     <h1>Temple Photo Album</h1>
     <button id="menu-button">&#9776;</button>
     <nav id="nav-menu">
-      <a href="#intro">Home</a>
-      <a href="https://www.churchofjesuschrist.org/temples/photo-gallery?lang=eng" target="_blank">Temple Gallery</a>
-      <a href="#gallery">Photos</a>
+      <a href="#" onclick="showAll()">Home</a>
+      <a href="#" onclick="filterOld()">Old</a>
+      <a href="#" onclick="filterNew()">New</a>
+      <a href="#" onclick="filterLarge()">Large</a>
+      <a href="#" onclick="filterSmall()">Small</a>
     </nav>
   </header>
 
   <main>
-    <section id="intro" class="intro-section">
-      <h2>Why Temples Matter</h2>
-      <p>Temples are sacred places set apart from the world—holy spaces where we draw closer to God and receive eternal blessings. Each temple stands as a symbol of faith in Jesus Christ and hope in His promises.</p>
-      <p>Within these sacred walls, families are sealed together forever, covenants are made, and lives are blessed with peace, revelation, and strength. The temple is a refuge from life's storms and a reminder of God's eternal plan for each of us.</p>
-      <p>President Russell M. Nelson taught, “In the temple we find peace. There we receive direction for our lives and strength to face the future with faith.”</p>
-      <p><a href="https://www.churchofjesuschrist.org/temples" target="_blank">💙 Learn more about temples</a></p>
+    <section id="intro">
+      <h2>Welcome to the Temple Experience</h2>
+      <p>Temples are sacred spaces where eternal ordinances and covenants are made. Each temple represents a connection between God and His children.</p>
     </section>
 
-    <!-- FILTER BUTTONS -->
-    <section class="filter-buttons">
-      <button onclick="allTemples()">Home</button>
-      <button onclick="oldTemples()">Old</button>
-      <button onclick="newTemples()">New</button>
-      <button onclick="largeTemples()">Large</button>
-      <button onclick="smallTemples()">Small</button>
-    </section>
-
-    <!-- DYNAMIC TEMPLE CARDS -->
     <section id="gallery" class="grid-container">
       <h2 class="visually-hidden">Temple Gallery</h2>
       <div id="temple-cards"></div>
@@ -53,4 +38,5 @@
   </footer>
 </body>
 </html>
+
 
