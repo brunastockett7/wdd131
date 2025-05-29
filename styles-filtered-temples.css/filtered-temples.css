@@ -91,4 +91,14 @@ footer {
   padding: 1.5rem;
   font-size: 0.9rem;
 }
+/* === IMAGE STYLE FIX === */
+.temple-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  object-fit: cover;
+}
 
