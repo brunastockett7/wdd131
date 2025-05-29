@@ -113,4 +113,21 @@ footer {
   height: 1px;
   overflow: hidden;
 }
+.intro {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+}
 
+.temple-card img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -4,71 +4,70 @@ const temples = [
     location: "Salt Lake City, Utah",
     dedicated: "1893-04-06",
     area: 253015,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-lds-901262-wallpaper.jpg"
+    imageUrl: "images/temples/salt-lake.jpg"
   },
   {
     templeName: "Rome Italy Temple",
     location: "Rome, Italy",
     dedicated: "2019-03-10",
     area: 41010,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-lds-245303-wallpaper.jpg"
+    imageUrl: "images/temples/rome.jpg"
   },
   {
     templeName: "Laie Hawaii Temple",
     location: "Laie, Hawaii",
     dedicated: "1919-11-27",
     area: 42000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-lds-816915-wallpaper.jpg"
+    imageUrl: "images/temples/laie-hawaii.jpg"
   },
   {
     templeName: "Tokyo Japan Temple",
     location: "Tokyo, Japan",
     dedicated: "1980-10-27",
     area: 52824,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/tokyo-japan-temple/tokyo-japan-temple-lds-1167827-wallpaper.jpg"
+    imageUrl: "images/temples/tokyo-japan.jpg"
   },
   {
     templeName: "Paris France Temple",
     location: "Le Chesnay, France",
     dedicated: "2017-05-21",
     area: 44000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/paris-france-temple/paris-france-temple-lds-1406443-wallpaper.jpg"
+    imageUrl: "images/temples/paris-france.jpg"
   },
   {
     templeName: "St. George Temple",
     location: "St. George, Utah",
     dedicated: "1877-04-06",
     area: 110000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/st-george-utah-temple/st-george-utah-temple-lds-1396946-wallpaper.jpg"
+    imageUrl: "images/temples/st-george.jpg"
   },
   {
     templeName: "Provo City Center Temple",
     location: "Provo, Utah",
     dedicated: "2016-03-20",
     area: 85000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/provo-city-center-temple/provo-city-center-temple-lds-1232124-wallpaper.jpg"
+    imageUrl: "images/temples/provo.jpg"
   },
-  // 👇 Add 3 new temples
   {
     templeName: "Fortaleza Brazil Temple",
     location: "Fortaleza, Brazil",
     dedicated: "2019-06-02",
     area: 38000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/fortaleza-brazil-temple/fortaleza-brazil-temple-lds-1438496-wallpaper.jpg"
+    imageUrl: "images/temples/fortaleza.jpg"
   },
   {
     templeName: "Arequipa Peru Temple",
     location: "Arequipa, Peru",
     dedicated: "2019-12-15",
     area: 29000,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/arequipa-peru-temple/arequipa-peru-temple-lds-1468054-wallpaper.jpg"
+    imageUrl: "images/temples/arequipa.jpg"
   },
   {
     templeName: "Manti Utah Temple",
     location: "Manti, Utah",
     dedicated: "1888-05-21",
     area: 74792,
-    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-lds-1440490-wallpaper.jpg"
+    imageUrl: "images/temples/manti-temple.jpg"
   }
 ];
 
