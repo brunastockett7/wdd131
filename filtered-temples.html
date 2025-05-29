@@ -3,39 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temple Photo Album</title>
-  <link rel="stylesheet" href="styles-filtered-temples/filtered-temples.css" />
-  <script src="scripts-filtered/filtered-temples.js" defer></script>
+  <title>Filtered Temples</title>
+  <link rel="stylesheet" href="filtered-temples.css" />
 </head>
 <body>
   <header>
-    <h1>Temple Photo Album</h1>
-    <button id="menu-button">&#9776;</button>
-    <nav id="nav-menu">
-      <a href="#" onclick="showAll()">Home</a>
-      <a href="#" onclick="filterOld()">Old</a>
-      <a href="#" onclick="filterNew()">New</a>
-      <a href="#" onclick="filterLarge()">Large</a>
-      <a href="#" onclick="filterSmall()">Small</a>
+    <h1>Temple Gallery</h1>
+    <nav>
+      <button id="home">Home</button>
+      <button id="old">Old</button>
+      <button id="new">New</button>
+      <button id="large">Large</button>
+      <button id="small">Small</button>
     </nav>
   </header>
 
   <main>
-    <section id="intro">
-      <h2>Welcome to the Temple Experience</h2>
-      <p>Temples are sacred spaces where eternal ordinances and covenants are made. Each temple represents a connection between God and His children.</p>
-    </section>
-
-    <section id="gallery">
-      <h2 class="visually-hidden">Temple Gallery</h2>
-      <div class="grid-container" id="temple-cards"></div>
-    </section>
+    <div id="temple-cards"></div>
   </main>
 
   <footer>
-    <p>&copy; <span id="year"></span> Bruna Stockett</p>
-    <p>Last Modified: <span id="last-modified"></span></p>
+    <p>&copy; <span id="year"></span> | Last modified: <span id="lastModified"></span> | Bruna Stockett</p>
   </footer>
+
+  <script src="filtered-temples.js"></script>
 </body>
 </html>
 
