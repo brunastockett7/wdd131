@@ -279,3 +279,23 @@ header h1 {
   display: block;
   margin: 0 auto 1rem;
 }
+/* === ENSURE FULL BACKGROUND AND CENTERING === */
+body, html {
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
