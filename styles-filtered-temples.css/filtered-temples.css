@@ -66,7 +66,14 @@ h1 {
   padding: 1rem;
   text-align: center;
 }
-
+/* === FOOTER === */
+footer {
+  background-color: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
 /* === CONSISTENT IMAGE STYLING === */
 .temple-card img {
   width: 100%;
@@ -76,13 +83,4 @@ h1 {
   border-radius: 8px;
   margin: 1rem auto;
   display: block;
-}
-
-/* === FOOTER === */
-footer {
-  background-color: #0b3d91;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
 }
