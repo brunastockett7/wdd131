@@ -4,70 +4,70 @@ const temples = [
     location: "Salt Lake City, Utah",
     dedicated: "1893-04-06",
     area: 253015,
-    imageUrl: "images/temples/salt-lake.jpg"
+    imageUrl: "images-filtered-temples/salt-lake.jpg"
   },
   {
     templeName: "Rome Italy Temple",
     location: "Rome, Italy",
     dedicated: "2019-03-10",
     area: 41010,
-    imageUrl: "images/temples/rome.jpg"
+    imageUrl: "images-filtered-temples/rome.jpg"
   },
   {
     templeName: "Laie Hawaii Temple",
     location: "Laie, Hawaii",
     dedicated: "1919-11-27",
     area: 42000,
-    imageUrl: "images/temples/laie-hawaii.jpg"
+    imageUrl: "images-filtered-temples/laie-hawaii.jpg"
   },
   {
     templeName: "Tokyo Japan Temple",
     location: "Tokyo, Japan",
     dedicated: "1980-10-27",
     area: 52824,
-    imageUrl: "images/temples/tokyo-japan.jpg"
+    imageUrl: "images-filtered-temples/tokyo-japan.jpg"
   },
   {
     templeName: "Paris France Temple",
     location: "Le Chesnay, France",
     dedicated: "2017-05-21",
     area: 44000,
-    imageUrl: "images/temples/paris-france.jpg"
+    imageUrl: "images-filtered-temples/paris-france.jpg"
   },
   {
     templeName: "St. George Temple",
     location: "St. George, Utah",
     dedicated: "1877-04-06",
     area: 110000,
-    imageUrl: "images/temples/st-george.jpg"
+    imageUrl: "images-filtered-temples/st-george.jpg"
   },
   {
     templeName: "Provo City Center Temple",
     location: "Provo, Utah",
     dedicated: "2016-03-20",
     area: 85000,
-    imageUrl: "images/temples/provo.jpg"
+    imageUrl: "images-filtered-temples/provo.jpg"
   },
   {
     templeName: "Fortaleza Brazil Temple",
     location: "Fortaleza, Brazil",
     dedicated: "2019-06-02",
     area: 38000,
-    imageUrl: "images/temples/fortaleza.jpg"
+    imageUrl: "images-filtered-temples/fortaleza.jpg"
   },
   {
     templeName: "Arequipa Peru Temple",
     location: "Arequipa, Peru",
     dedicated: "2019-12-15",
     area: 29000,
-    imageUrl: "images/temples/arequipa.jpg"
+    imageUrl: "images-filtered-temples/arequipa.jpg"
   },
   {
     templeName: "Manti Utah Temple",
     location: "Manti, Utah",
     dedicated: "1888-05-21",
     area: 74792,
-    imageUrl: "images/temples/manti-temple.jpg"
+    imageUrl: "images-filtered-temples/manti-temple.jpg"
   }
 ];
 
@@ -111,3 +111,4 @@ displayTemples(temples);
 // Footer info
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
+
