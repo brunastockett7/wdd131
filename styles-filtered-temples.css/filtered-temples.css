@@ -149,3 +149,97 @@ main .intro {
   color: #333;
   line-height: 1.6;
 }
+/* === FULL PAGE LIGHT BLUE BACKGROUND === */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #e3f2fd;
+  margin: 0;
+  padding: 0;
+}
+
+/* === HEADER === */
+header {
+  background-color: #0b3d91;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* === CENTERED TITLE === */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0;
+}
+
+/* === CENTERED INTRO TEXT === */
+.intro {
+  max-width: 800px;
+  margin: 1rem auto 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === FILTER BUTTONS === */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.filter-buttons button {
+  background-color: #0b3d91;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background-color: #1565c0;
+}
+
+/* === TEMPLE GRID CARDS SIDE BY SIDE === */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+/* === TEMPLE CARD === */
+.temple-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* === CONSISTENT IMAGE STYLING === */
+.temple-card img {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* === FOOTER === */
+footer {
+  background-color: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
