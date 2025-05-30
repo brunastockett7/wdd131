@@ -4,7 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Filtered Temples</title>
-  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <!-- ✅ Fix CSS path -->
+  <link rel="stylesheet" href="styles-filtered/filtered-temples.css" />
 </head>
 <body>
   <header>
@@ -39,7 +40,13 @@
     <p>&copy; <span id="year"></span> | Last modified: <span id="lastModified"></span> | Bruna Stockett</p>
   </footer>
 
-  <script src="scripts-filtered/filtered-temples.js"></script>
+  <!-- ✅ Fix JS path and defer -->
+  <script src="scripts/filtered-temples.js" defer></script>
+  <script>
+    // Dynamically load year and last modified date
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
 </body>
 </html>
 
