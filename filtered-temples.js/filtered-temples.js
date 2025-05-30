@@ -75,18 +75,25 @@ document.addEventListener("DOMContentLoaded", function () {
   function createCard(temple) {
     const card = document.createElement("section");
     card.classList.add("temple-card");
-    card.innerHTML = `
+
+    const templeHTML = `
       <h2>${temple.templeName}</h2>
       <p><strong>Location:</strong> ${temple.location}</p>
       <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
       <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
       <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
     `;
+
+    card.innerHTML = templeHTML;
     return card;
   }
 
   function displayTemples(filteredTemples) {
     const container = document.getElementById("temple-cards");
+    if (!container) {
+      console.error("❌ Missing <div id='temple-cards'> in HTML.");
+      return;
+    }
     container.innerHTML = "";
     filteredTemples.forEach(temple =>
       container.appendChild(createCard(temple))
@@ -113,11 +120,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Render initial view
   displayTemples(temples);
 
-  // Footer content
-  document.getElementById("year").textContent = new Date().getFullYear();
-  document.getElementById("lastModified").textContent = document.lastModified;
-
-  // Confirm JS loaded
-  console.log("Temple page JS loaded ✅");
+  console.log("✅ Temple page JS loaded");
 });
 
