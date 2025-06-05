@@ -1,13 +1,14 @@
-
-/* Base styles for mobile */
+/* Base Styles */
 body {
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
 header {
-  background-color: #002D62;
+  background-color: #002d62;
   color: white;
   padding: 1rem;
   position: relative;
@@ -15,6 +16,8 @@ header {
 
 header h1 {
   margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
 }
 
 #menu-button {
@@ -31,7 +34,7 @@ header h1 {
 nav {
   display: none;
   flex-direction: column;
-  background-color: #004080;
+  background-color: #003b87;
 }
 
 nav.open {
@@ -39,47 +42,121 @@ nav.open {
 }
 
 nav a {
-  color: white;
+  padding: 0.75rem;
   text-decoration: none;
-  padding: 1rem;
-  border-top: 1px solid #0055aa;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav a:hover {
+  background-color: #0050b3;
 }
 
 main {
   padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
+/* Intro Section */
+.intro-section {
+  margin-bottom: 2rem;
+}
+
+.intro-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+}
+
+/* Filter Buttons */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  padding: 0.5rem 1rem;
+  background-color: #002d62;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #004494;
+}
+
+/* Gallery Grid */
 .grid-container {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 1rem;
 }
 
 figure {
-  margin: 0;
-  background-color: #f2f2f2;
-  padding: 0.5rem;
+  background: white;
   border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 0;
 }
 
 figure img {
   width: 100%;
-  border-radius: 8px;
+  height: auto;
+  display: block;
 }
 
 figcaption {
+  padding: 0.75rem;
   font-size: 0.9rem;
-  padding-top: 0.5rem;
+  background-color: #fafafa;
 }
 
+/* Footer */
 footer {
-  background-color: #002D62;
+  background-color: #002d62;
   color: white;
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
 }
 
+/* Utility */
 .visually-hidden {
   position: absolute;
   left: -9999px;
+}
+
+/* Larger screens */
+@media screen and (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav a {
+    border: none;
+    padding: 1rem 2rem;
+  }
 }
