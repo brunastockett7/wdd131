@@ -30,48 +30,53 @@ footer {
   margin-top: 2rem;
 }
 
-/* Hero Section */
+/* Hero Banner */
 .hero {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 1rem auto;
 }
 
 .banner {
   width: 100%;
+  max-width: 500px;
   height: auto;
-  max-height: 100px; /* adjusted from 160px */
-  object-fit: cover;
+  max-height: 100px;
+  object-fit: contain;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Form Section */
+/* Form Container */
 .form-container {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.97);
   padding: 2rem;
   border-radius: 12px;
   max-width: 640px;
-  margin: 0 auto;
+  margin: 2rem auto;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Logo (optional, small and minimal) */
 .logo {
-  width: 80px;
+  width: 60px;
+  height: auto;
   margin-bottom: 1rem;
 }
 
+/* Product Image (clean and centered) */
 .product-image {
   width: 100%;
-  max-width: 300px; /* adjusted from 400px */
+  max-width: 280px;
   height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-/* Form Layout */
+/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -103,7 +108,7 @@ textarea {
   min-height: 100px;
 }
 
-/* Required Indicators */
+/* Required Indicator Styling */
 label span,
 legend span {
   color: #7a6b85;
@@ -111,6 +116,7 @@ legend span {
   font-weight: normal;
 }
 
+/* Fieldsets */
 fieldset {
   border: none;
   padding: 0;
@@ -121,6 +127,7 @@ legend {
   margin-bottom: 0.5rem;
 }
 
+/* Inputs */
 input[type="checkbox"],
 input[type="radio"] {
   margin-right: 0.5rem;
@@ -143,7 +150,7 @@ input[type="submit"]:hover {
   background-color: #8d8096;
 }
 
-/* Focus Styles */
+/* Accessibility Focus */
 input:focus,
 select:focus,
 textarea:focus {
@@ -151,18 +158,14 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* Mobile Responsive */
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
   .form-container {
     padding: 1rem;
   }
 
-  input[type="submit"] {
-    width: 100%;
-  }
-
   .logo {
-    width: 60px;
+    width: 50px;
   }
 
   .banner {
@@ -171,5 +174,9 @@ textarea:focus {
 
   .product-image {
     max-width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
   }
 }
