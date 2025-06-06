@@ -7,14 +7,10 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background-color: #f5f3f7;
+  background-color: #fdf6ee; /* soft beige */
   color: #3e3e3e;
   line-height: 1.6;
   padding: 1rem;
-  background-image: url("../images-form/background.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 /* Header & Footer */
@@ -26,61 +22,36 @@ footer {
   color: white;
 }
 
-footer {
+/* Image Stack (logo, banner, product) */
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 2rem;
 }
 
-/* Hero Banner */
-.hero {
-  text-align: center;
-  margin: 1rem auto;
-}
-
-.banner {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  max-height: 100px;
-  object-fit: contain;
+.small-image {
+  width: 100px;
+  max-width: 100%;
+  margin: 0.5rem auto;
   border-radius: 8px;
-  display: block;
-  margin: 0 auto;
+  object-fit: contain;
 }
 
 /* Form Container */
 .form-container {
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: #fff;
   padding: 2rem;
   border-radius: 12px;
   max-width: 640px;
   margin: 2rem auto;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-/* Logo (optional, small and minimal) */
-.logo {
-  width: 60px;
-  height: auto;
-  margin-bottom: 1rem;
-}
-
-/* Product Image (clean and centered) */
-.product-image {
-  width: 100%;
-  max-width: 280px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-/* Form Styling */
+/* Form Layout */
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 1.5rem;
 }
 
@@ -108,7 +79,6 @@ textarea {
   min-height: 100px;
 }
 
-/* Required Indicator Styling */
 label span,
 legend span {
   color: #7a6b85;
@@ -116,7 +86,6 @@ legend span {
   font-weight: normal;
 }
 
-/* Fieldsets */
 fieldset {
   border: none;
   padding: 0;
@@ -127,14 +96,12 @@ legend {
   margin-bottom: 0.5rem;
 }
 
-/* Inputs */
 input[type="checkbox"],
 input[type="radio"] {
   margin-right: 0.5rem;
   accent-color: #a89db0;
 }
 
-/* Submit Button */
 input[type="submit"] {
   background-color: #a89db0;
   color: white;
@@ -150,7 +117,6 @@ input[type="submit"]:hover {
   background-color: #8d8096;
 }
 
-/* Accessibility Focus */
 input:focus,
 select:focus,
 textarea:focus {
@@ -158,22 +124,14 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsive */
 @media (max-width: 600px) {
   .form-container {
     padding: 1rem;
   }
 
-  .logo {
-    width: 50px;
-  }
-
-  .banner {
-    max-height: 80px;
-  }
-
-  .product-image {
-    max-width: 100%;
+  .small-image {
+    width: 80px;
   }
 
   input[type="submit"] {
