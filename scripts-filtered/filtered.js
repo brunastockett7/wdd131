@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 const temples = [
   {
     name: "Arequipa Peru Temple",
@@ -74,8 +76,9 @@ const temples = [
 const gallery = document.querySelector("#gallery");
 
 function renderTemples(filteredTemples) {
-  gallery.innerHTML = ""; // Clear previous
-  filteredTemples.forEach(temple => {
+  gallery.innerHTML = ""; // Clear previous content
+
+  filteredTemples.forEach((temple) => {
     const card = document.createElement("figure");
 
     const img = document.createElement("img");
@@ -84,9 +87,12 @@ function renderTemples(filteredTemples) {
     img.loading = "lazy";
 
     const caption = document.createElement("figcaption");
-    caption.innerHTML =
-`<strong>${temple.name}</strong><br>${temple.location}<br>Dedicated:
-${temple.dedication}<br>Area: ${temple.area.toLocaleString()} sq ft`;
+    caption.innerHTML = `
+      <strong>${temple.name}</strong><br>
+      ${temple.location}<br>
+      Dedicated: ${temple.dedication}<br>
+      Area: ${temple.area.toLocaleString()} sq ft
+    `;
 
     card.appendChild(img);
     card.appendChild(caption);
@@ -94,32 +100,38 @@ ${temple.dedication}<br>Area: ${temple.area.toLocaleString()} sq ft`;
   });
 }
 
-// Filters
-document.querySelector("#home").addEventListener("click", () =>
-renderTemples(temples));
+// Filter buttons
+document.querySelector("#home").addEventListener("click", () => {
+  renderTemples(temples);
+});
+
 document.querySelector("#old").addEventListener("click", () => {
-  renderTemples(temples.filter(t => new
-Date(t.dedication).getFullYear() < 1900));
+  renderTemples(temples.filter((t) => new Date(t.dedication).getFullYear() < 1900));
 });
+
 document.querySelector("#new").addEventListener("click", () => {
-  renderTemples(temples.filter(t => new
-Date(t.dedication).getFullYear() > 2000));
+  renderTemples(temples.filter((t) => new Date(t.dedication).getFullYear() > 2000));
 });
+
 document.querySelector("#large").addEventListener("click", () => {
-  renderTemples(temples.filter(t => t.area > 90000));
+  renderTemples(temples.filter((t) => t.area > 90000));
 });
+
 document.querySelector("#small").addEventListener("click", () => {
-  renderTemples(temples.filter(t => t.area < 10000));
+  renderTemples(temples.filter((t) => t.area < 10000));
 });
 
 // Initial load
 renderTemples(temples);
 
-// Footer dates
+// Footer
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("last-modified").textContent = document.lastModified;
 
-// Optional: Hamburger menu toggle
+// Hamburger menu toggle
 const menuButton = document.getElementById("menu-button");
 const navMenu = document.getElementById("nav-menu");
-menuButton.addEventListener("click", () => navMenu.classList.toggle("open"));
+
+menuButton.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+});
