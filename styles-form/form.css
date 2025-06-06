@@ -149,3 +149,19 @@ textarea:focus {
     width: 100%;
   }
 }
+/* Image Stack Styling */
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.small-image {
+  width: 70px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+  margin: 0.25rem 0;
+}
