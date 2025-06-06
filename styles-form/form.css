@@ -39,9 +39,10 @@ footer {
 .banner {
   width: 100%;
   height: auto;
-  max-height: 160px;
+  max-height: 100px; /* adjusted from 160px */
   object-fit: cover;
   border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 /* Form Section */
@@ -64,9 +65,10 @@ footer {
 
 .product-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px; /* adjusted from 400px */
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Form Layout */
@@ -157,5 +159,17 @@ textarea:focus {
 
   input[type="submit"] {
     width: 100%;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .banner {
+    max-height: 80px;
+  }
+
+  .product-image {
+    max-width: 100%;
   }
 }
