@@ -7,26 +7,26 @@
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(to bottom, #f3e5f5, #d1c4e9); /* lilac gradient */
+  background: linear-gradient(to bottom, #ede7f6, #d1c4e9); /* Purple + Lilac gradient */
   color: #3e3e3e;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Main container */
+/* Main layout */
 main {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   padding: 2rem 1rem;
+  flex-direction: column;
 }
 
 /* Header */
 header {
-  background-color: #6a1b9a; /* Deep purple */
+  background-color: #3c003c; /* Deep plum */
   color: white;
   text-align: center;
   padding: 1.5rem 0;
@@ -38,7 +38,7 @@ header h1 {
 
 /* Footer */
 footer {
-  background-color: #4a0072;
+  background-color: #3c003c;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -47,16 +47,16 @@ footer {
 
 /* Form Container */
 .form-container {
-  background-color: #f8f1fa; /* soft lilac */
+  background-color: #f3e5f5; /* Soft lilac */
   padding: 2rem;
   border-radius: 12px;
-  max-width: 640px;
+  max-width: 420px;
   width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   border: 1px solid #c2b7d3;
 }
 
-/* Form Layout */
+/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
@@ -87,15 +87,6 @@ textarea {
   min-height: 100px;
 }
 
-/* Required Indicator */
-label span,
-legend span {
-  color: #7a6b85;
-  margin-left: 4px;
-  font-weight: normal;
-}
-
-/* Fieldsets */
 fieldset {
   border: none;
   padding: 0;
@@ -109,27 +100,24 @@ legend {
 input[type="checkbox"],
 input[type="radio"] {
   margin-right: 0.5rem;
-  accent-color: #a89db0; /* lilac */
+  accent-color: #a89db0;
 }
 
-/* Submit Button */
 input[type="submit"] {
-  background-color: #6a1b9a;
-  color: white;
-  border: none;
+  background-color: #eee;
+  color: #333;
+  border: 1px solid #999;
   padding: 0.75rem;
-  border-radius: 6px;
-  font-size: 1rem;
   font-weight: bold;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
-  background-color: #4a0072;
+  background-color: #ccc;
 }
 
-/* Focus styles */
 input:focus,
 select:focus,
 textarea:focus {
@@ -137,9 +125,8 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* Optional field label */
-label.optional,
-legend.optional {
+/* Optional Field Label */
+.optional {
   font-size: 0.9rem;
   color: #5c5c5c;
   font-style: italic;
