@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Review Submitted</title>
+  <link rel="stylesheet" href="form.css" />
 </head>
 <body>
   <header>
@@ -12,12 +12,15 @@
   </header>
 
   <main>
-    <p>Your review has been submitted.</p>
-    <p>You have submitted <span id="review-count">0</span> review(s).</p>
+    <section class="confirmation-container">
+      <p>Your review has been submitted successfully. 🙌</p>
+      <p>You have submitted <span id="review-count">0</span> review(s).</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 | Product Reviews | Your Name</p>
+    <p>©2025 🌸 Bruna Stockett 🌸<br>North Dakota<br>
+    Last Modified: <span id="last-modified"></span></p>
   </footer>
 
   <script>
@@ -26,7 +29,9 @@
       count++;
       localStorage.setItem("reviewCount", count);
       document.getElementById("review-count").textContent = count;
+      document.getElementById("last-modified").textContent = document.lastModified;
     });
   </script>
 </body>
 </html>
+
